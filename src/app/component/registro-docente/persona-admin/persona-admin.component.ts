@@ -15,7 +15,7 @@ import { SessionStorageService } from '@service/storage/session-storage.service'
 })
 export class RdPersonaAdminComponent extends AdminComponent {
 
-  readonly entityName: string = "persona";
+  readonly entityName: string = "registro_docente";
 
   constructor(
     protected fb: FormBuilder, 
@@ -31,6 +31,10 @@ export class RdPersonaAdminComponent extends AdminComponent {
     super(fb, route, router, location, dd, storage, dialog, snackBar);
   }
 
+  setData(params: any): void {
+    this.data$.next(null);
+  }
+
   reload(response){
     /**
      * Recargar una vez persistido
@@ -38,5 +42,7 @@ export class RdPersonaAdminComponent extends AdminComponent {
     this.snackBar.open("Registro realizado", "X");
     this.router.navigateByUrl('/registro-realizado');
   }
+
+  
 }
 
