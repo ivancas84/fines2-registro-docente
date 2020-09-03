@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PersonaShowComponent } from '@component/persona-show/persona-show/persona-show.component';
-import { ComisionShowComponent } from '@component/comision-show/comision-show/comision-show.component';
+import { RdPersonaAdminComponent } from '@component/registro-docente/persona-admin/persona-admin.component';
+import { RegistroRealizadoComponent } from '@component/registro-realizado/registro-realizado.component';
 
 const routes: Routes = [
-  { path: 'persona-show', component: PersonaShowComponent, pathMatch: 'full' },
-  { path: 'comision-show', component: ComisionShowComponent, pathMatch: 'full' },
+  { path: 'registro-realizado', component: RegistroRealizadoComponent, pathMatch: 'full' },
+  { path: '**', component: RdPersonaAdminComponent, pathMatch: 'full' },
 
 ];
 

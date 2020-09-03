@@ -56,14 +56,10 @@ import { MenuComponent } from '@component/menu/menu.component';
 import { SearchAllComponent } from '@component/search-all/search-all.component';
 import { LabelComponent } from '@component/label/label.component';
 
-import { PersonaShowComponent } from '@component/persona-show/persona-show/persona-show.component';
-import { PersonaTableComponent } from '@component/persona-show/persona-table/persona-table.component';
-import { PersonaSearchComponent } from '@component/persona-show/persona-search/persona-search.component';
-
-import { ComisionShowComponent } from '@component/comision-show/comision-show/comision-show.component';
-import { ComisionTableComponent } from '@component/comision-show/comision-table/comision-table.component';
-import { ComisionSearchComponent } from '@component/comision-show/comision-search/comision-search.component';
-import { ComisionSearchParamsComponent } from '@component/comision-show/comision-search-params/comision-search-params.component';
+import { RdPersonaAdminComponent } from '@component/registro-docente/persona-admin/persona-admin.component';
+import { RdPersonaFieldsetComponent } from '@component/registro-docente/persona-fieldset/persona-fieldset.component';
+import { LocalValidators } from '@service/local-validators.service';
+import { RegistroRealizadoComponent } from '@component/registro-realizado/registro-realizado.component';
 
 export const APP_DATE_FORMATS = {
   parse: {
@@ -91,8 +87,8 @@ export const APP_DATE_FORMATS = {
     SearchAllComponent,
     LabelComponent,
 
-    PersonaShowComponent, PersonaTableComponent, PersonaSearchComponent,
-    ComisionShowComponent, ComisionTableComponent, ComisionSearchComponent, ComisionSearchParamsComponent
+    RdPersonaAdminComponent, RdPersonaFieldsetComponent,
+    RegistroRealizadoComponent
   ],
   imports: [
     BrowserModule,
@@ -137,6 +133,7 @@ export const APP_DATE_FORMATS = {
     SessionStorageService, 
     ParserService, 
     ValidatorsService,
+    LocalValidators,
     
     DataDefinitionLoaderService, 
   ],
