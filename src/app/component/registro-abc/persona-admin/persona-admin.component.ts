@@ -10,12 +10,12 @@ import { ValidatorsService } from '@service/validators/validators.service';
 import { SessionStorageService } from '@service/storage/session-storage.service';
 
 @Component({
-  selector: 'app-rd-persona-admin',
+  selector: 'app-rabc-persona-admin',
   templateUrl: './persona-admin.component.html',
-})
-export class RdPersonaAdminComponent extends AdminComponent {
+})  
+export class RabcPersonaAdminComponent extends AdminComponent {
 
-  readonly entityName: string = "registro_docente";
+  readonly entityName: string = "registro_abc";
 
   constructor(
     protected fb: FormBuilder, 
@@ -32,17 +32,12 @@ export class RdPersonaAdminComponent extends AdminComponent {
   }
 
   setData(): void {
-    this.data$.next(null);
+    this.data$.next(this.params);
   }
 
   reload(response){
-    /**
-     * Recargar una vez persistido
-     */
-    this.snackBar.open("Registro realizado", "X");
-    this.router.navigateByUrl('/registro-realizado');
+    console.log(response);
+    this.router.navigateByUrl('/toma-posesion-realizada');
   }
-
-  
 }
 
