@@ -57,7 +57,6 @@ export class RdPersonaFieldsetComponent extends FieldsetComponent {
         validators: [Validators.required, Validators.maxLength(255), ValidatorsService.email()],
       }],
     },{
-      updateOn: "submit",
       validators: [LocalValidators.cuilDni()],
     });
     return fg;
