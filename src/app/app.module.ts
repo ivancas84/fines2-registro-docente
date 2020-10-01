@@ -72,6 +72,12 @@ import { MenuComponent } from '@component/menu/menu.component';
 import { SearchAllComponent } from '@component/search-all/search-all.component';
 import { LabelComponent } from '@component/label/label.component';
 
+import { CalendarioInputSelectComponent } from '@component/reusable/calendario-input-select/calendario-input-select.component';
+import { CalendarioLabelComponent } from '@component/reusable/calendario-label/calendario-label.component';
+import { CursoShortLabelComponent } from '@component/reusable/curso-short-label/curso-short-label.component';
+import { InputCursoShortSelectComponent } from '@component/reusable/input-curso-short-select/input-curso-short-select.component';
+import { PlanificacionInputPickerComponent } from '@component/reusable/planificacion-input-picker/planificacion-input-picker.component';
+
 import { RdPersonaAdminComponent } from '@component/registro-docente/persona-admin/persona-admin.component';
 import { RdPersonaFieldsetComponent } from '@component/registro-docente/persona-fieldset/persona-fieldset.component';
 import { RegistroRealizadoComponent } from '@component/registro-realizado/registro-realizado.component';
