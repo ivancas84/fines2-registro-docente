@@ -9,7 +9,8 @@ import { TomaPosesionRealizadaComponent } from '@component/toma-posesion-realiza
 
 const routes: Routes = [
   { path: 'registro-realizado', component: RegistroRealizadoComponent, pathMatch: 'full' },
-  { path: '**', component: RdPersonaAdminComponent, pathMatch: 'full' },
+  { path: 'registro-docente', component: RdPersonaAdminComponent, pathMatch: 'full' },
+  { path: '', component: CdComisionShowComponent, pathMatch: 'full' },
   { path: 'consolidado-docente', component: CdComisionShowComponent, pathMatch: 'full' },
   { path: 'toma-posesion', component: TomaPosesionAdminComponent, pathMatch: 'full' },
   { path: 'registro-abc', component: RabcPersonaAdminComponent, pathMatch: 'full' },

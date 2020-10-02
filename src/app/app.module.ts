@@ -74,6 +74,7 @@ import { LabelComponent } from '@component/label/label.component';
 
 import { CalendarioInputSelectComponent } from '@component/reusable/calendario-input-select/calendario-input-select.component';
 import { CalendarioLabelComponent } from '@component/reusable/calendario-label/calendario-label.component';
+import { CursoIgeLabelComponent } from '@component/reusable/curso-ige-label/curso-ige-label.component';
 import { CursoShortLabelComponent } from '@component/reusable/curso-short-label/curso-short-label.component';
 import { InputCursoShortSelectComponent } from '@component/reusable/input-curso-short-select/input-curso-short-select.component';
 import { PlanificacionInputPickerComponent } from '@component/reusable/planificacion-input-picker/planificacion-input-picker.component';
@@ -92,6 +93,7 @@ import { TomaPosesionAdminComponent } from '@component/toma-posesion/toma-posesi
 import { TomaPosesionFieldsetComponent } from '@component/toma-posesion/toma-posesion-fieldset/toma-posesion-fieldset.component';
 
 import { TomaPosesionRealizadaComponent } from '@component/toma-posesion-realizada/toma-posesion-realizada.component';
+
 
 export const APP_DATE_FORMATS = {
   parse: {
@@ -138,6 +140,7 @@ export const APP_DATE_FORMATS = {
 
     CalendarioLabelComponent, CalendarioInputSelectComponent, PlanificacionInputPickerComponent,
     CursoShortLabelComponent, InputCursoShortSelectComponent,
+    CursoIgeLabelComponent,
 
     CdComisionShowComponent, CdComisionTableComponent,
     RdPersonaAdminComponent, RdPersonaFieldsetComponent,

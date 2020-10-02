@@ -32,12 +32,12 @@ readonly entityName: string = 'toma_posesion';
         validators: [Validators.required],
       }],
       email_abc: [null, {
-        validators: [Validators.required, Validators.pattern("^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?abc\.gob\.ar$")],
-      
+        validators: [
+          Validators.required, 
+          Validators.pattern("^[a-zA-Z0-9_.+-]+@(?:(?:[a-zA-Z0-9-]+\.)?[a-zA-Z]+\.)?abc\.gob\.ar$"),
+          ValidatorsService.notIncludes("apdsad")],
       }],
 
-    },{
-      updateOn: "submit",
     });
     return fg;
   }
