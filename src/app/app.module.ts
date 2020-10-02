@@ -93,6 +93,7 @@ import { TomaPosesionAdminComponent } from '@component/toma-posesion/toma-posesi
 import { TomaPosesionFieldsetComponent } from '@component/toma-posesion/toma-posesion-fieldset/toma-posesion-fieldset.component';
 
 import { TomaPosesionRealizadaComponent } from '@component/toma-posesion-realizada/toma-posesion-realizada.component';
+import { ListaAlumnosComponent } from '@component/lista-alumnos/lista-alumnos.component';
 
 
 export const APP_DATE_FORMATS = {
@@ -143,6 +144,7 @@ export const APP_DATE_FORMATS = {
     CursoIgeLabelComponent,
 
     CdComisionShowComponent, CdComisionTableComponent,
+    ListaAlumnosComponent,
     RdPersonaAdminComponent, RdPersonaFieldsetComponent,
     RegistroRealizadoComponent,
     RabcPersonaAdminComponent, RabcPersonaFieldsetComponent,
