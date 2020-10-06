@@ -12,11 +12,9 @@ export class ListaAlumnosComponent extends ShowComponent {
   entityName: string = "toma";
 
   ngOnInit(): void { //@override
-    console.log("test");
     this.load$ = this.route.queryParams.pipe(
       switchMap(
         queryParams => {
-          console.log(queryParams)
           if(!queryParams.hasOwnProperty("id")) {
             this.load = true;
             return of(false);
@@ -25,7 +23,6 @@ export class ListaAlumnosComponent extends ShowComponent {
           this.load = false;
           this.initDisplay();
 
-          console.log(this.params);
           return this.initData().pipe(
             map(
               () => {return this.load = true;}
@@ -40,7 +37,6 @@ export class ListaAlumnosComponent extends ShowComponent {
     return this.setData().pipe(
       map(
         data => {
-          console.log(data);
           this.data$.next(data);                
         }
       )
