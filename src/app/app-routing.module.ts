@@ -7,13 +7,14 @@ import { TomaPosesionAdminComponent } from '@component/toma-posesion/toma-posesi
 import { RabcPersonaAdminComponent } from '@component/registro-abc/persona-admin/persona-admin.component';
 import { TomaPosesionRealizadaComponent } from '@component/toma-posesion-realizada/toma-posesion-realizada.component';
 import { ListaAlumnosComponent } from '@component/lista-alumnos/lista-alumnos.component';
+import { CrComisionShowComponent } from '@component/consolidado-referente/comision-show/comision-show.component';
 
 const routes: Routes = [
   { path: 'registro-realizado', component: RegistroRealizadoComponent, pathMatch: 'full' },
   { path: 'registro-docente', component: RdPersonaAdminComponent, pathMatch: 'full' },
   { path: '', component: CdComisionShowComponent, pathMatch: 'full' },
   { path: 'consolidado-docente', component: CdComisionShowComponent, pathMatch: 'full' },
-  { path: 'toma-posesion', component: TomaPosesionAdminComponent, pathMatch: 'full' },
+  { path: 'consolidado-referente', component: CrComisionShowComponent, pathMatch: 'full' },  { path: 'toma-posesion', component: TomaPosesionAdminComponent, pathMatch: 'full' },
   { path: 'registro-abc', component: RabcPersonaAdminComponent, pathMatch: 'full' },
   { path: 'toma-posesion-realizada', component: TomaPosesionRealizadaComponent, pathMatch: 'full' },
   { path: 'lista-alumnos', component: ListaAlumnosComponent, pathMatch: 'full' },

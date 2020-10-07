@@ -94,7 +94,8 @@ import { TomaPosesionFieldsetComponent } from '@component/toma-posesion/toma-pos
 
 import { TomaPosesionRealizadaComponent } from '@component/toma-posesion-realizada/toma-posesion-realizada.component';
 import { ListaAlumnosComponent } from '@component/lista-alumnos/lista-alumnos.component';
-
+import { CrComisionShowComponent } from '@component/consolidado-referente/comision-show/comision-show.component';
+import { CrComisionTableComponent } from '@component/consolidado-referente/comision-table/comision-table.component';
 
 export const APP_DATE_FORMATS = {
   parse: {
@@ -150,6 +151,7 @@ export const APP_DATE_FORMATS = {
     RabcPersonaAdminComponent, RabcPersonaFieldsetComponent,
     TomaPosesionAdminComponent, TomaPosesionFieldsetComponent,
     TomaPosesionRealizadaComponent,
+    CrComisionShowComponent, CrComisionTableComponent,
   ],
   imports: [
     BrowserModule,
